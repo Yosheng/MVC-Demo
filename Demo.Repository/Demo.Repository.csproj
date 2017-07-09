@@ -56,12 +56,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Demo.Domain\Demo.Domain.csproj">
-      <Project>{d306430e-407e-4d7f-ae03-f9aaf439b50a}</Project>
-      <Name>Demo.Domain</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

@@ -4,6 +4,8 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Demo.Domain;
+using Demo.Repository.Impl;
 
 namespace Demo.Domain
 {
@@ -16,6 +18,14 @@ namespace Demo.Domain
             using (var blogModel = new BlogModel())
             {
                 blogModel.Database.Initialize(true);
+            }
+
+            using (var uow = new UnitOfWork(new BlogModel()))
+            {
+                foreach (var item in uow.GetRepository<Template>().All())
+                {
+                    Console.WriteLine(item.Name);
+                }
             }
         }
     }
