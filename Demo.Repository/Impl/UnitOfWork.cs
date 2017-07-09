@@ -4,7 +4,7 @@ using System.Data.Entity;
 
 namespace Demo.Repository.Impl
 {
-    public class UnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         protected readonly DbContext Context;
         private Hashtable _repositories;
@@ -25,7 +25,7 @@ namespace Demo.Repository.Impl
 
             if (!_repositories.ContainsKey(type))
             {
-                var repositoryType = typeof(EFGenericRepository<>);
+                var repositoryType = typeof(Repository<>);
 
                 var repositoryInstance =
                 Activator.CreateInstance(repositoryType
