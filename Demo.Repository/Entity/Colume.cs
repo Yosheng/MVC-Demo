@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Demo.Domain
+namespace Demo.Repository.Entity
 {
     [Table("Colume", Schema = "iNet")]
     public class Colume

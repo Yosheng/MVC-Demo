@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Demo.Domain
+namespace Demo.Repository.Entity
 {
     public class ColumeType
     {

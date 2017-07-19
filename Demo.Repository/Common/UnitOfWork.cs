@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Demo.Repository.Impl;
+using System;
 using System.Collections;
 using System.Data.Entity;
 
-namespace Demo.Repository.Impl
+namespace Demo.Repository.Common
 {
     public class UnitOfWork : IUnitOfWork
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Demo.Domain
+namespace Demo.Repository.Entity
 {
     [Table("Template", Schema = "iNet")]
     public class Template
